@@ -1,0 +1,54 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Arturo Cardone - Personal Website">
+	<main>
+		<section class="hero">
+			<h1>Arturo Cardone</h1>
+			<p class="subtitle">Welcome to my personal website</p>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		min-height: 80vh;
+		padding: 2rem;
+	}
+
+	.hero {
+		text-align: center;
+		max-width: 800px;
+	}
+
+	h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.subtitle {
+		font-size: 1.5rem;
+		color: #666;
+		margin-top: 1rem;
+	}
+
+	@media (max-width: 768px) {
+		h1 {
+			font-size: 2rem;
+		}
+
+		.subtitle {
+			font-size: 1.2rem;
+		}
+	}
+</style>
