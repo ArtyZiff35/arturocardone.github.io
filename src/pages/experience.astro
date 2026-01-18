@@ -4,51 +4,51 @@ import Navigation from '../components/Navigation.tsx';
 ---
 
 <InfoLayout>
-    <div class="p-4 sm:pt-8 sm:px-12 pb-20 min-h-dvh">
+    <div class="p-3 sm:p-4 sm:pt-8 sm:px-12 pb-12 sm:pb-20 min-h-dvh flex flex-col gap-8 sm:gap-16 max-w-6xl mx-auto w-full">
         <Navigation client:load />
 
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl sm:text-5xl font-bold text-zinc-50 mb-12">Experience</h1>
+        <div class="flex-1 flex flex-col justify-center">
+            <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-zinc-50 mb-4 sm:mb-6 md:mb-8 px-4 sm:px-0">Experience</h1>
 
-            <div class="space-y-12">
+            <div class="space-y-8">
                 <!-- Current Role -->
                 <div class="relative">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
                         <div>
-                            <h2 class="text-2xl font-bold text-zinc-100">Software Development Engineer II</h2>
-                            <p class="text-lg text-zinc-300">Amazon.com - Advertising</p>
+                            <h2 class="text-base sm:text-lg font-bold text-zinc-100">Software Development Engineer II</h2>
+                            <p class="text-sm sm:text-base text-zinc-300">Amazon.com - Advertising</p>
                         </div>
-                        <div class="text-zinc-400 mt-2 md:mt-0">
-                            <p class="font-medium">May 2022 - Present</p>
-                            <p class="text-sm">Chicago, IL</p>
+                        <div class="text-zinc-400 mt-1 md:mt-0">
+                            <p class="font-medium text-sm">May 2022 - Present</p>
+                            <p class="text-xs">Chicago, IL</p>
                         </div>
                     </div>
 
-                    <div class="space-y-4 text-zinc-300">
-                        <p class="text-lg leading-relaxed">
+                    <div class="space-y-3 text-zinc-300">
+                        <p class="text-sm sm:text-base leading-relaxed">
                             Led redesign of Amazon Ads' Book-of-Business platform, enabling data ingestion from 10+ sources, improving P99 latency 30x and driving 35% user growth.
                         </p>
 
-                        <ul class="space-y-2 ml-6">
+                        <ul class="space-y-1 ml-4">
                             <li class="flex items-start">
-                                <span class="text-zinc-500 mr-2 mt-1">•</span>
-                                <span>Created AI tool using LLMs to generate visualizations of advertiser metrics through prompts, saving 1,000 hours/month for sales teams</span>
+                                <span class="text-zinc-500 mr-2 mt-0.5 text-sm">•</span>
+                                <span class="text-sm">Created AI tool using LLMs to generate visualizations of advertiser metrics through prompts, saving 1,000 hours/month for sales teams</span>
                             </li>
                             <li class="flex items-start">
-                                <span class="text-zinc-500 mr-2 mt-1">•</span>
-                                <span>Architected "Manager View" tool serving 4M accounts to sales teams with sub-second latency</span>
+                                <span class="text-zinc-500 mr-2 mt-0.5 text-sm">•</span>
+                                <span class="text-sm">Architected "Manager View" tool serving 4M accounts to sales teams with sub-second latency</span>
                             </li>
                             <li class="flex items-start">
-                                <span class="text-zinc-500 mr-2 mt-1">•</span>
-                                <span>Led GenAI initiative, boosting developer productivity by 20% using Amazon Q assistants and MCP servers</span>
+                                <span class="text-zinc-500 mr-2 mt-0.5 text-sm">•</span>
+                                <span class="text-sm">Led GenAI initiative, boosting developer productivity by 20% using Amazon Q assistants and MCP servers</span>
                             </li>
                             <li class="flex items-start">
-                                <span class="text-zinc-500 mr-2 mt-1">•</span>
-                                <span>Scrum Master and mentor to 5+ engineers; managed a team of 2 engineers</span>
+                                <span class="text-sm">Scrum Master and mentor to 5+ engineers; managed a team of 2 engineers</span>
                             </li>
                         </ul>
 
-                        <div class="flex flex-wrap gap-2 mt-4">
+                        <div class="flex flex-wrap gap-1.5 mt-3">
                             <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">AWS</span>
                             <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">React</span>
                             <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Bedrock</span>
@@ -60,23 +60,23 @@ import Navigation from '../components/Navigation.tsx';
 
                 <!-- Previous Amazon Role -->
                 <div class="relative">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
                         <div>
-                            <h2 class="text-2xl font-bold text-zinc-100">Software Development Engineer II</h2>
-                            <p class="text-lg text-zinc-300">Amazon.com - Last Mile</p>
+                            <h2 class="text-base sm:text-lg font-bold text-zinc-100">Software Development Engineer II</h2>
+                            <p class="text-sm sm:text-base text-zinc-300">Amazon.com - Last Mile</p>
                         </div>
-                        <div class="text-zinc-400 mt-2 md:mt-0">
-                            <p class="font-medium">Oct 2021 - May 2022</p>
-                            <p class="text-sm">Seattle, WA</p>
+                        <div class="text-zinc-400 mt-1 md:mt-0">
+                            <p class="font-medium text-sm">Oct 2021 - May 2022</p>
+                            <p class="text-xs">Seattle, WA</p>
                         </div>
                     </div>
 
                     <div class="space-y-4 text-zinc-300">
-                        <p class="text-lg leading-relaxed">
+                        <p class="text-sm sm:text-base leading-relaxed">
                             Designed event-driven services enabling tote bags in drivers' routes. Led 3 engineers through implementation; delivered $11.7M savings and 30% reduction in stop time.
                         </p>
 
-                        <div class="flex flex-wrap gap-2 mt-4">
+                        <div class="flex flex-wrap gap-1.5 mt-3">
                             <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">AWS</span>
                             <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Android</span>
                             <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Event-Driven Systems</span>
@@ -98,18 +98,18 @@ import Navigation from '../components/Navigation.tsx';
                     </div>
 
                     <div class="space-y-4 text-zinc-300">
-                        <p class="text-lg leading-relaxed">
+                        <p class="text-sm sm:text-base leading-relaxed">
                             Owned key features for Amazon Flex Android app supporting 18M daily interactions and 800K daily package scans.
                         </p>
 
-                        <ul class="space-y-2 ml-6">
+                        <ul class="space-y-1 ml-4">
                             <li class="flex items-start">
-                                <span class="text-zinc-500 mr-2 mt-1">•</span>
+                                <span class="text-zinc-500 mr-2 mt-0.5 text-sm">•</span>
                                 <span>Proposed & developed backend system to optimize stop-level package collection, increasing itinerary efficiency by 5%</span>
                             </li>
                         </ul>
 
-                        <div class="flex flex-wrap gap-2 mt-4">
+                        <div class="flex flex-wrap gap-1.5 mt-3">
                             <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Android</span>
                             <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">AWS</span>
                         </div>
@@ -130,11 +130,11 @@ import Navigation from '../components/Navigation.tsx';
                     </div>
 
                     <div class="space-y-4 text-zinc-300">
-                        <p class="text-lg leading-relaxed">
+                        <p class="text-sm sm:text-base leading-relaxed">
                             Engineered predictive maintenance platform, processing robotic arm data from FCA assembly lines; tested on-site at Maserati's plant.
                         </p>
 
-                        <div class="flex flex-wrap gap-2 mt-4">
+                        <div class="flex flex-wrap gap-1.5 mt-3">
                             <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Android</span>
                             <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Spring</span>
                         </div>
@@ -156,6 +156,7 @@ import Navigation from '../components/Navigation.tsx';
                     </a>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </InfoLayout>

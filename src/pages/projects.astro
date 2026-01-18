@@ -4,24 +4,25 @@ import Navigation from '../components/Navigation.tsx';
 ---
 
 <InfoLayout>
-    <div class="p-4 sm:pt-8 sm:px-12 pb-20 min-h-dvh">
+    <div class="p-3 sm:p-4 sm:pt-8 sm:px-12 pb-12 sm:pb-20 min-h-dvh flex flex-col gap-8 sm:gap-16 max-w-6xl mx-auto w-full">
         <Navigation client:load />
 
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl sm:text-5xl font-bold text-zinc-50 mb-12">Projects & Activities</h1>
+        <div class="flex-1 flex flex-col justify-center">
+            <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-zinc-50 mb-4 sm:mb-6 md:mb-8 px-4 sm:px-0">Projects & Activities</h1>
 
             <div class="space-y-12">
                 <!-- Professional Activities -->
                 <div>
-                    <h2 class="text-2xl font-semibold text-zinc-200 mb-6">Professional Activities</h2>
+                    <h2 class="text-lg sm:text-xl font-semibold text-zinc-200 mb-4">Professional Activities</h2>
 
-                    <div class="space-y-6">
-                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
-                            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                                <h3 class="text-xl font-medium text-zinc-200">AWS YouthTech Bootcamp Panelist</h3>
-                                <span class="text-zinc-400 text-sm mt-2 md:mt-0">2025</span>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
+                                <h3 class="text-lg font-medium text-zinc-200">AWS YouthTech Bootcamp Panelist</h3>
+                                <span class="text-zinc-400 text-sm mt-1 md:mt-0">2025</span>
                             </div>
-                            <p class="text-zinc-300 mb-3">Represented AWS in campus hiring panels, sharing insights about cloud technology careers and recruitment processes.</p>
+                            <p class="text-zinc-300 mb-3 text-sm">Represented AWS in campus hiring panels, sharing insights about cloud technology careers and recruitment processes.</p>
                             <div class="flex flex-wrap gap-2">
                                 <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">AWS</span>
                                 <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Mentorship</span>
@@ -33,10 +34,10 @@ import Navigation from '../components/Navigation.tsx';
 
                 <!-- Research & Academic -->
                 <div>
-                    <h2 class="text-2xl font-semibold text-zinc-200 mb-6">Research & Academic</h2>
+                    <h2 class="text-lg sm:text-xl font-semibold text-zinc-200 mb-4">Research & Academic</h2>
 
                     <div class="space-y-6">
-                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                        <div class="p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
                             <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                                 <h3 class="text-xl font-medium text-zinc-200">Machine Learning Research - UIC</h3>
                                 <span class="text-zinc-400 text-sm mt-2 md:mt-0">2019</span>
@@ -53,7 +54,7 @@ import Navigation from '../components/Navigation.tsx';
                             </div>
                         </div>
 
-                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                        <div class="p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
                             <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                                 <h3 class="text-xl font-medium text-zinc-200">Graduate Research Assistant</h3>
                                 <span class="text-zinc-400 text-sm mt-2 md:mt-0">2019</span>
@@ -72,10 +73,10 @@ import Navigation from '../components/Navigation.tsx';
 
                 <!-- Personal Projects -->
                 <div>
-                    <h2 class="text-2xl font-semibold text-zinc-200 mb-6">Personal Projects</h2>
+                    <h2 class="text-lg sm:text-xl font-semibold text-zinc-200 mb-4">Personal Projects</h2>
 
                     <div class="space-y-6">
-                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                        <div class="p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
                             <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                                 <h3 class="text-xl font-medium text-zinc-200">Blindspot Interactive</h3>
                                 <span class="text-zinc-400 text-sm mt-2 md:mt-0">2016-2019</span>
@@ -91,7 +92,7 @@ import Navigation from '../components/Navigation.tsx';
                             </div>
                         </div>
 
-                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                        <div class="p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
                             <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                                 <h3 class="text-xl font-medium text-zinc-200">Dashcam Speed Detector</h3>
                                 <span class="text-zinc-400 text-sm mt-2 md:mt-0">2019</span>
@@ -111,10 +112,10 @@ import Navigation from '../components/Navigation.tsx';
 
                 <!-- Hackathons & Competitions -->
                 <div>
-                    <h2 class="text-2xl font-semibold text-zinc-200 mb-6">Hackathons & Competitions</h2>
+                    <h2 class="text-lg sm:text-xl font-semibold text-zinc-200 mb-4">Hackathons & Competitions</h2>
 
                     <div class="space-y-6">
-                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                        <div class="p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
                             <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                                 <h3 class="text-xl font-medium text-zinc-200">Droidcon Italy 2017</h3>
                                 <span class="text-zinc-400 text-sm mt-2 md:mt-0">Winner - AAL Theme</span>
@@ -129,7 +130,7 @@ import Navigation from '../components/Navigation.tsx';
                             </div>
                         </div>
 
-                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                        <div class="p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
                             <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                                 <h3 class="text-xl font-medium text-zinc-200">Google Developer Group Hack 2016</h3>
                                 <span class="text-zinc-400 text-sm mt-2 md:mt-0">Winner</span>
@@ -148,10 +149,10 @@ import Navigation from '../components/Navigation.tsx';
 
                 <!-- Education -->
                 <div>
-                    <h2 class="text-2xl font-semibold text-zinc-200 mb-6">Education</h2>
+                    <h2 class="text-lg sm:text-xl font-semibold text-zinc-200 mb-4">Education</h2>
 
                     <div class="space-y-6">
-                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                        <div class="p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
                             <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                                 <h3 class="text-xl font-medium text-zinc-200">M.S. Computer Science</h3>
                                 <span class="text-zinc-400 text-sm mt-2 md:mt-0">2018-2019</span>
@@ -159,7 +160,7 @@ import Navigation from '../components/Navigation.tsx';
                             <p class="text-zinc-300 mb-3">University of Illinois at Chicago, Chicago, IL</p>
                         </div>
 
-                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                        <div class="p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
                             <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                                 <h3 class="text-xl font-medium text-zinc-200">M.S. Software Engineering</h3>
                                 <span class="text-zinc-400 text-sm mt-2 md:mt-0">2017-2019</span>
@@ -167,7 +168,7 @@ import Navigation from '../components/Navigation.tsx';
                             <p class="text-zinc-300 mb-3">Polytechnic University of Turin, Turin, Italy</p>
                         </div>
 
-                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                        <div class="p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
                             <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                                 <h3 class="text-xl font-medium text-zinc-200">B.S. Computer Engineering</h3>
                                 <span class="text-zinc-400 text-sm mt-2 md:mt-0">2014-2017</span>
@@ -177,6 +178,7 @@ import Navigation from '../components/Navigation.tsx';
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </InfoLayout>
