@@ -1,0 +1,161 @@
+---
+import InfoLayout from '../layouts/InfoLayout.astro';
+import Navigation from '../components/Navigation.tsx';
+---
+
+<InfoLayout>
+    <div class="p-4 sm:pt-8 sm:px-12 pb-20 min-h-dvh">
+        <Navigation client:load />
+
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl sm:text-5xl font-bold text-zinc-50 mb-12">Experience</h1>
+
+            <div class="space-y-12">
+                <!-- Current Role -->
+                <div class="relative">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h2 class="text-2xl font-bold text-zinc-100">Software Development Engineer II</h2>
+                            <p class="text-lg text-zinc-300">Amazon.com - Advertising</p>
+                        </div>
+                        <div class="text-zinc-400 mt-2 md:mt-0">
+                            <p class="font-medium">May 2022 - Present</p>
+                            <p class="text-sm">Chicago, IL</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 text-zinc-300">
+                        <p class="text-lg leading-relaxed">
+                            Led redesign of Amazon Ads' Book-of-Business platform, enabling data ingestion from 10+ sources, improving P99 latency 30x and driving 35% user growth.
+                        </p>
+
+                        <ul class="space-y-2 ml-6">
+                            <li class="flex items-start">
+                                <span class="text-zinc-500 mr-2 mt-1">•</span>
+                                <span>Created AI tool using LLMs to generate visualizations of advertiser metrics through prompts, saving 1,000 hours/month for sales teams</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-zinc-500 mr-2 mt-1">•</span>
+                                <span>Architected "Manager View" tool serving 4M accounts to sales teams with sub-second latency</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-zinc-500 mr-2 mt-1">•</span>
+                                <span>Led GenAI initiative, boosting developer productivity by 20% using Amazon Q assistants and MCP servers</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-zinc-500 mr-2 mt-1">•</span>
+                                <span>Scrum Master and mentor to 5+ engineers; managed a team of 2 engineers</span>
+                            </li>
+                        </ul>
+
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">AWS</span>
+                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">React</span>
+                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Bedrock</span>
+                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">LangChain</span>
+                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Anthropic Claude</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Previous Amazon Role -->
+                <div class="relative">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h2 class="text-2xl font-bold text-zinc-100">Software Development Engineer II</h2>
+                            <p class="text-lg text-zinc-300">Amazon.com - Last Mile</p>
+                        </div>
+                        <div class="text-zinc-400 mt-2 md:mt-0">
+                            <p class="font-medium">Oct 2021 - May 2022</p>
+                            <p class="text-sm">Seattle, WA</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 text-zinc-300">
+                        <p class="text-lg leading-relaxed">
+                            Designed event-driven services enabling tote bags in drivers' routes. Led 3 engineers through implementation; delivered $11.7M savings and 30% reduction in stop time.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">AWS</span>
+                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Android</span>
+                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Event-Driven Systems</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SDE I Role -->
+                <div class="relative">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h2 class="text-2xl font-bold text-zinc-100">Software Development Engineer I</h2>
+                            <p class="text-lg text-zinc-300">Amazon.com - Last Mile</p>
+                        </div>
+                        <div class="text-zinc-400 mt-2 md:mt-0">
+                            <p class="font-medium">Oct 2019 - Oct 2021</p>
+                            <p class="text-sm">Seattle, WA</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 text-zinc-300">
+                        <p class="text-lg leading-relaxed">
+                            Owned key features for Amazon Flex Android app supporting 18M daily interactions and 800K daily package scans.
+                        </p>
+
+                        <ul class="space-y-2 ml-6">
+                            <li class="flex items-start">
+                                <span class="text-zinc-500 mr-2 mt-1">•</span>
+                                <span>Proposed & developed backend system to optimize stop-level package collection, increasing itinerary efficiency by 5%</span>
+                            </li>
+                        </ul>
+
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Android</span>
+                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internship -->
+                <div class="relative">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h2 class="text-2xl font-bold text-zinc-100">Software Engineer - Intern</h2>
+                            <p class="text-lg text-zinc-300">Comau (Fiat Chrysler Automobiles)</p>
+                        </div>
+                        <div class="text-zinc-400 mt-2 md:mt-0">
+                            <p class="font-medium">Mar 2017 - May 2017</p>
+                            <p class="text-sm">Grugliasco, Italy</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 text-zinc-300">
+                        <p class="text-lg leading-relaxed">
+                            Engineered predictive maintenance platform, processing robotic arm data from FCA assembly lines; tested on-site at Maserati's plant.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Android</span>
+                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Spring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 pt-8 border-t border-zinc-800">
+                <div class="text-center">
+                    <h2 class="text-2xl font-semibold text-zinc-200 mb-4">Ready to Build Something Amazing?</h2>
+                    <p class="text-zinc-400 mb-6">
+                        I'm always excited to take on new challenges and contribute to innovative projects.
+                    </p>
+                    <a
+                        href="/contact"
+                        class="inline-block px-8 py-3 bg-zinc-700 hover:bg-zinc-600 text-zinc-100 rounded-lg transition-colors duration-200 font-medium"
+                    >
+                        Let's Connect
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</InfoLayout>

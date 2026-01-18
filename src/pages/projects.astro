@@ -1,0 +1,182 @@
+---
+import InfoLayout from '../layouts/InfoLayout.astro';
+import Navigation from '../components/Navigation.tsx';
+---
+
+<InfoLayout>
+    <div class="p-4 sm:pt-8 sm:px-12 pb-20 min-h-dvh">
+        <Navigation client:load />
+
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl sm:text-5xl font-bold text-zinc-50 mb-12">Projects & Activities</h1>
+
+            <div class="space-y-12">
+                <!-- Professional Activities -->
+                <div>
+                    <h2 class="text-2xl font-semibold text-zinc-200 mb-6">Professional Activities</h2>
+
+                    <div class="space-y-6">
+                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                                <h3 class="text-xl font-medium text-zinc-200">AWS YouthTech Bootcamp Panelist</h3>
+                                <span class="text-zinc-400 text-sm mt-2 md:mt-0">2025</span>
+                            </div>
+                            <p class="text-zinc-300 mb-3">Represented AWS in campus hiring panels, sharing insights about cloud technology careers and recruitment processes.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">AWS</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Mentorship</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Career Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research & Academic -->
+                <div>
+                    <h2 class="text-2xl font-semibold text-zinc-200 mb-6">Research & Academic</h2>
+
+                    <div class="space-y-6">
+                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                                <h3 class="text-xl font-medium text-zinc-200">Machine Learning Research - UIC</h3>
+                                <span class="text-zinc-400 text-sm mt-2 md:mt-0">2019</span>
+                            </div>
+                            <p class="text-zinc-300 mb-3">
+                                Authored thesis on "Machine Learning Methods for Adaptive Test Case Generation for Android Activities" with 600+ downloads.
+                                Research focused on automated testing methodologies for mobile applications.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Machine Learning</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Android</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Automated Testing</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Academic Research</span>
+                            </div>
+                        </div>
+
+                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                                <h3 class="text-xl font-medium text-zinc-200">Graduate Research Assistant</h3>
+                                <span class="text-zinc-400 text-sm mt-2 md:mt-0">2019</span>
+                            </div>
+                            <p class="text-zinc-300 mb-3">
+                                Conducted advanced research in machine learning applications for software testing and quality assurance at University of Illinois Chicago.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Research</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Machine Learning</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Software Testing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Projects -->
+                <div>
+                    <h2 class="text-2xl font-semibold text-zinc-200 mb-6">Personal Projects</h2>
+
+                    <div class="space-y-6">
+                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                                <h3 class="text-xl font-medium text-zinc-200">Blindspot Interactive</h3>
+                                <span class="text-zinc-400 text-sm mt-2 md:mt-0">2016-2019</span>
+                            </div>
+                            <p class="text-zinc-300 mb-3">
+                                Published Android applications on Google Play Store with 25,000+ downloads total. Generated revenue through AdSense integration and app monetization.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Android</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Google Play</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">AdSense</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Mobile Apps</span>
+                            </div>
+                        </div>
+
+                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                                <h3 class="text-xl font-medium text-zinc-200">Dashcam Speed Detector</h3>
+                                <span class="text-zinc-400 text-sm mt-2 md:mt-0">2019</span>
+                            </div>
+                            <p class="text-zinc-300 mb-3">
+                                Joined comma.ai Speed Challenge using computer vision and machine learning to detect vehicle speeds from dashcam footage. Implemented advanced image processing algorithms for real-time speed detection.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">OpenCV</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Keras</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Computer Vision</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hackathons & Competitions -->
+                <div>
+                    <h2 class="text-2xl font-semibold text-zinc-200 mb-6">Hackathons & Competitions</h2>
+
+                    <div class="space-y-6">
+                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                                <h3 class="text-xl font-medium text-zinc-200">Droidcon Italy 2017</h3>
+                                <span class="text-zinc-400 text-sm mt-2 md:mt-0">Winner - AAL Theme</span>
+                            </div>
+                            <p class="text-zinc-300 mb-3">
+                                Won Droidcon Italy hackathon in the Ambient Assisted Living (AAL) category. Developed innovative Android solutions for elderly care and accessibility.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Android</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Hackathon</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Accessibility</span>
+                            </div>
+                        </div>
+
+                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                                <h3 class="text-xl font-medium text-zinc-200">Google Developer Group Hack 2016</h3>
+                                <span class="text-zinc-400 text-sm mt-2 md:mt-0">Winner</span>
+                            </div>
+                            <p class="text-zinc-300 mb-3">
+                                First place winner at Google Developer Group hackathon. Created innovative wearable technology solutions using Android Wear platform.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Android Wear</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Wearables</span>
+                                <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">IoT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div>
+                    <h2 class="text-2xl font-semibold text-zinc-200 mb-6">Education</h2>
+
+                    <div class="space-y-6">
+                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                                <h3 class="text-xl font-medium text-zinc-200">M.S. Computer Science</h3>
+                                <span class="text-zinc-400 text-sm mt-2 md:mt-0">2018-2019</span>
+                            </div>
+                            <p class="text-zinc-300 mb-3">University of Illinois at Chicago, Chicago, IL</p>
+                        </div>
+
+                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                                <h3 class="text-xl font-medium text-zinc-200">M.S. Software Engineering</h3>
+                                <span class="text-zinc-400 text-sm mt-2 md:mt-0">2017-2019</span>
+                            </div>
+                            <p class="text-zinc-300 mb-3">Polytechnic University of Turin, Turin, Italy</p>
+                        </div>
+
+                        <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                            <div class="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                                <h3 class="text-xl font-medium text-zinc-200">B.S. Computer Engineering</h3>
+                                <span class="text-zinc-400 text-sm mt-2 md:mt-0">2014-2017</span>
+                            </div>
+                            <p class="text-zinc-300 mb-3">Polytechnic University of Turin, Turin, Italy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</InfoLayout>

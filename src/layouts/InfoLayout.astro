@@ -1,0 +1,33 @@
+---
+import Layout from "./Layout.astro";
+import WarpBackground from "../components/WarpBackground.tsx";
+
+const { title, description } = Astro.props;
+
+const pathname = Astro.url.pathname;
+---
+
+<Layout title={title} description={description}>
+	<div class="flex relative gap-4 w-full max-w-screen-xl mx-auto px-4">
+		<nav class="relative w-12 md:w-40 lg:w-56 xl:w-72 sm:min-h-screen sm:ml-4 sm:pb-4">
+			<div class="w-full h-full max-sm:w-12 md:max-w-40 lg:max-w-56 xl:max-w-72 fixed -z-10 sm:bottom-4 sm:rounded-b-full overflow-hidden">
+				<WarpBackground
+					color1="#ffffff"
+					color2="#27272a"
+					color3="#52525b"
+					speed={0.15}
+					swirl={1.5}
+					swirlIterations={10}
+					shapeScale={0.3}
+					client:load
+				/>
+			</div>
+		</nav>
+
+		<main class="relative flex-1"  >
+			<slot />
+		</main>
+
+
+	</div>
+</Layout>

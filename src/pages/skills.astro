@@ -1,0 +1,170 @@
+---
+import InfoLayout from '../layouts/InfoLayout.astro';
+import Navigation from '../components/Navigation.tsx';
+---
+
+<InfoLayout>
+    <div class="p-4 sm:pt-8 sm:px-12 pb-20 min-h-dvh">
+        <Navigation client:load />
+
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl sm:text-5xl font-bold text-zinc-50 mb-12">Skills & Technologies</h1>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Languages -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-semibold text-zinc-200 border-b border-zinc-700 pb-2">Languages</h2>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-zinc-300">Java</span>
+                            <div class="flex space-x-1">
+                                <div class="w-2 h-2 bg-zinc-600 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-600 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-600 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-600 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-500 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-zinc-300">TypeScript</span>
+                            <div class="flex space-x-1">
+                                <div class="w-2 h-2 bg-zinc-600 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-600 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-600 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-600 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-500 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-zinc-300">JavaScript</span>
+                            <div class="flex space-x-1">
+                                <div class="w-2 h-2 bg-zinc-600 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-600 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-600 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-600 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-600 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-zinc-300">Python</span>
+                            <div class="flex space-x-1">
+                                <div class="w-2 h-2 bg-zinc-600 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-600 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-600 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-500 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-700 rounded-full"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-zinc-300">Kotlin</span>
+                            <div class="flex space-x-1">
+                                <div class="w-2 h-2 bg-zinc-600 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-600 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-600 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-500 rounded-full"></div>
+                                <div class="w-2 h-2 bg-zinc-700 rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-semibold text-zinc-200 border-b border-zinc-700 pb-2">Frontend</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">Android</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">React</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">HTML/CSS</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">Material Design</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">Jetpack Compose</span>
+                    </div>
+                </div>
+
+                <!-- Cloud & Infrastructure -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-semibold text-zinc-200 border-b border-zinc-700 pb-2">Cloud & Infrastructure</h2>
+                    <div class="grid grid-cols-2 gap-2">
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">AWS</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">Lambda</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">ECS</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">SNS/SQS</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">Step Functions</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">CDK</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">Docker</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">Serverless</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">Glue</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">Microservices</span>
+                    </div>
+                </div>
+
+                <!-- Data & Databases -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-semibold text-zinc-200 border-b border-zinc-700 pb-2">Data & Databases</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">NoSQL (DynamoDB)</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">S3</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">Elasticsearch</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">SQL</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">Redshift</span>
+                    </div>
+                </div>
+
+                <!-- AI/ML -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-semibold text-zinc-200 border-b border-zinc-700 pb-2">AI/ML</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">Amazon Bedrock</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">Amazon Q</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">LangChain</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">LangGraph</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">MCP Servers</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">LLM Prompt Engineering</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">Keras</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">OpenCV</span>
+                    </div>
+                </div>
+
+                <!-- Engineering Practices -->
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-semibold text-zinc-200 border-b border-zinc-700 pb-2">Engineering Practices</h2>
+                    <div class="grid grid-cols-2 gap-2">
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">CI/CD</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">Git</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">System Design</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">Agile</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">Scrum</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">Kanban</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">TDD</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 rounded-full text-sm">Code Review</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications/Experience Highlights -->
+            <div class="mt-16 pt-8 border-t border-zinc-800">
+                <h2 class="text-2xl font-semibold text-zinc-200 mb-6">Certifications & Achievements</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                        <h3 class="text-lg font-medium text-zinc-200 mb-2">AWS Solutions Architect</h3>
+                        <p class="text-zinc-400 text-sm">Certified AWS Solutions Architect with extensive experience in cloud architecture and infrastructure design.</p>
+                    </div>
+
+                    <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                        <h3 class="text-lg font-medium text-zinc-200 mb-2">Leadership Experience</h3>
+                        <p class="text-zinc-400 text-sm">Led engineering teams and mentored junior developers while managing complex projects with multi-million dollar impact.</p>
+                    </div>
+
+                    <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                        <h3 class="text-lg font-medium text-zinc-200 mb-2">Open Source Contributor</h3>
+                        <p class="text-zinc-400 text-sm">Active contributor to open source projects and maintainer of personal projects with thousands of downloads.</p>
+                    </div>
+
+                    <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                        <h3 class="text-lg font-medium text-zinc-200 mb-2">Research Publications</h3>
+                        <p class="text-zinc-400 text-sm">Published research on machine learning methods for adaptive test case generation with 600+ downloads.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</InfoLayout>

@@ -1,0 +1,88 @@
+---
+import InfoLayout from '../layouts/InfoLayout.astro';
+import Navigation from '../components/Navigation.tsx';
+---
+
+<InfoLayout>
+    <div class="p-4 sm:pt-8 sm:px-12 pb-20 min-h-dvh">
+        <Navigation client:load />
+
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl sm:text-5xl font-bold text-zinc-50 mb-8">About Me</h1>
+
+            <div class="space-y-8">
+                <div class="prose prose-invert max-w-none">
+                    <p class="text-xl text-zinc-300 leading-relaxed mb-6">
+                        Software Engineer with 5+ years of experience in distributed systems, AWS infrastructure, and Android. Passionate about building scalable, high-impact systems using cutting-edge technologies. Currently building Generative AI solutions to drive efficiency and innovation in complex systems.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 text-center md:text-left">
+                    <div class="space-y-6">
+                        <h2 class="text-2xl font-semibold text-zinc-200">What I Do</h2>
+
+                        <div class="space-y-4">
+                            <div class="p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                                <h3 class="text-lg font-medium text-zinc-200 mb-2">System Architecture</h3>
+                                <p class="text-zinc-400">Design and implement scalable distributed systems using AWS services and microservices architecture.</p>
+                            </div>
+
+                            <div class="p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                                <h3 class="text-lg font-medium text-zinc-200 mb-2">AI/ML Solutions</h3>
+                                <p class="text-zinc-400">Build generative AI applications using Amazon Bedrock, LangChain, and modern LLM frameworks.</p>
+                            </div>
+
+                            <div class="p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                                <h3 class="text-lg font-medium text-zinc-200 mb-2">Mobile Development</h3>
+                                <p class="text-zinc-400">Create high-performance Android applications supporting millions of daily interactions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h2 class="text-2xl font-semibold text-zinc-200">My Approach</h2>
+
+                        <div class="space-y-4 text-zinc-300">
+                            <p>
+                                I believe in writing clean, maintainable code that scales. My experience at Amazon has taught me the importance of building systems that can handle massive scale while remaining reliable and cost-effective.
+                            </p>
+
+                            <p>
+                                I'm passionate about using technology to solve real-world problems, whether that's optimizing delivery routes to save millions or creating AI tools that boost developer productivity.
+                            </p>
+
+                            <p>
+                                When I'm not coding, you'll find me exploring new technologies, contributing to open source projects, or mentoring junior developers.
+                            </p>
+                        </div>
+
+                        <div class="pt-4">
+                            <h3 class="text-lg font-medium text-zinc-200 mb-3">Quick Facts</h3>
+                            <ul class="space-y-2 text-zinc-400">
+                                <li>• Based in Chicago, IL</li>
+                                <li>• 5+ years at Amazon</li>
+                                <li>• MS Computer Science from UIC</li>
+                                <li>• Passionate about AI and distributed systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-8">
+                    <div class="text-center">
+                        <h2 class="text-2xl font-semibold text-zinc-200 mb-4">Let's Work Together</h2>
+                        <p class="text-zinc-400 mb-6">
+                            I'm always interested in new opportunities and challenging projects. Whether you're looking to build something amazing or need expertise in AWS, AI, or Android development, I'd love to hear from you.
+                        </p>
+                        <a
+                            href="/contact"
+                            class="inline-block px-8 py-3 bg-zinc-700 hover:bg-zinc-600 text-zinc-100 rounded-lg transition-colors duration-200 font-medium"
+                        >
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</InfoLayout>

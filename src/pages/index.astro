@@ -1,54 +1,58 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import InfoLayout from '../layouts/InfoLayout.astro';
+import Navigation from '../components/Navigation.tsx';
 ---
 
-<Layout title="Arturo Cardone - Personal Website">
-	<main>
-		<section class="hero">
-			<h1>Arturo Cardone</h1>
-			<p class="subtitle">Welcome to my personal website</p>
-		</section>
-	</main>
-</Layout>
+<InfoLayout>
+    <div class="p-4 sm:pt-8 sm:px-12 pb-20 min-h-dvh flex flex-col gap-16 max-w-6xl mx-auto w-full">
+        <Navigation client:load />
 
-<style>
-	main {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		min-height: 80vh;
-		padding: 2rem;
-	}
+        <div class="flex-1 flex flex-col justify-center">
+            <div class="space-y-6 sm:space-y-8 text-center w-full">
+            <h1 class="text-5xl sm:text-6xl xl:text-7xl font-bold text-zinc-50 leading-tight mx-auto">
+                Arturo Cardone
+            </h1>
 
-	.hero {
-		text-align: center;
-		max-width: 800px;
-	}
+            <p class="text-xl xl:text-2xl text-zinc-400 font-medium mx-auto">
+                Software Engineer @ Amazon
+            </p>
 
-	h1 {
-		font-size: 3rem;
-		font-weight: 700;
-		margin-bottom: 1rem;
-		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
-	}
+            <p class="text-lg xl:text-xl text-zinc-500 text-balance max-w-2xl mx-auto leading-relaxed">
+                Building scalable systems and AI-powered solutions. 5+ years of experience in distributed systems, AWS infrastructure, and Android development.
+            </p>
 
-	.subtitle {
-		font-size: 1.5rem;
-		color: #666;
-		margin-top: 1rem;
-	}
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+                <a
+                    href="/experience"
+                    class="px-8 py-3 bg-zinc-700 hover:bg-zinc-600 text-zinc-100 rounded-lg transition-colors duration-200 font-medium"
+                >
+                    View My Work
+                </a>
+                <a
+                    href="/contact"
+                    class="px-8 py-3 border border-zinc-600 hover:border-zinc-500 text-zinc-300 hover:text-zinc-200 rounded-lg transition-colors duration-200 font-medium"
+                >
+                    Get In Touch
+                </a>
+            </div>
+        </div>
 
-	@media (max-width: 768px) {
-		h1 {
-			font-size: 2rem;
-		}
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto w-full">
+                <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800 text-center">
+                    <h3 class="text-lg font-semibold text-zinc-200 mb-2">5+ Years Experience</h3>
+                    <p class="text-zinc-400 text-sm">Building high-impact systems at Amazon</p>
+                </div>
 
-		.subtitle {
-			font-size: 1.2rem;
-		}
-	}
-</style>
+                <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800 text-center">
+                    <h3 class="text-lg font-semibold text-zinc-200 mb-2">AWS Expert</h3>
+                    <p class="text-zinc-400 text-sm">Distributed systems & cloud infrastructure</p>
+                </div>
+
+                <div class="p-6 bg-zinc-900/50 rounded-lg border border-zinc-800 text-center">
+                    <h3 class="text-lg font-semibold text-zinc-200 mb-2">AI & ML Focus</h3>
+                    <p class="text-zinc-400 text-sm">Generative AI solutions & automation</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</InfoLayout>
