@@ -8,138 +8,286 @@ import Navigation from '../components/Navigation.tsx';
         <Navigation client:load />
 
         <div class="flex-1 flex flex-col justify-center">
-            <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-zinc-50 mb-4 sm:mb-6 md:mb-8 px-4 sm:px-0">Experience</h1>
+            <div class="max-w-4xl mx-auto">
+            <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-100 mb-6 sm:mb-8 md:mb-10">Experience</h1>
 
             <div class="space-y-8">
                 <!-- Current Role -->
-                <div class="relative">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
-                        <div>
-                            <h2 class="text-base sm:text-lg font-bold text-zinc-100">Software Development Engineer II</h2>
-                            <p class="text-sm sm:text-base text-zinc-300">Amazon.com - Advertising</p>
-                        </div>
-                        <div class="text-zinc-400 mt-1 md:mt-0">
-                            <p class="font-medium text-sm">May 2022 - Present</p>
-                            <p class="text-xs">Chicago, IL</p>
-                        </div>
+                <div class="relative p-8 bg-gray-200 rounded-xl border border-gray-400 shadow-sm">
+                    <div class="absolute top-10 right-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                        <a href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="/src/assets/Amazon_logo.svg" alt="Amazon" class="h-8 w-auto" />
+                        </a>
+                    </div>
+                    <div class="pr-16">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Software Development Engineer II</h3>
+                        <p class="text-gray-600 text-sm mb-2">Amazon.com - Advertising</p>
+                        <p class="text-gray-600 text-sm mb-4">May 2022 - Present • Chicago, IL</p>
                     </div>
 
-                    <div class="space-y-3 text-zinc-300">
-                        <p class="text-sm sm:text-base leading-relaxed">
-                            Led redesign of Amazon Ads' Book-of-Business platform, enabling data ingestion from 10+ sources, improving P99 latency 30x and driving 35% user growth.
-                        </p>
+                    <hr class="border-gray-300 mb-4">
 
-                        <ul class="space-y-1 ml-4">
+                    <div class="mb-4">
+                        <h4 class="text-sm font-bold text-black mb-2">Overview:</h4>
+                        <p class="text-gray-700 text-sm leading-relaxed">Leading development initiatives in Amazon Advertising, focusing on platform optimization, AI-driven solutions, and team productivity enhancements.</p>
+                    </div>
+
+
+                    <div class="mb-4">
+                        <h4 class="text-sm font-bold text-black mb-2">Key Achievements:</h4>
+                        <ul class="space-y-2 text-sm text-gray-700">
                             <li class="flex items-start">
-                                <span class="text-zinc-500 mr-2 mt-0.5 text-sm">•</span>
-                                <span class="text-sm">Created AI tool using LLMs to generate visualizations of advertiser metrics through prompts, saving 1,000 hours/month for sales teams</span>
+                                <span class="text-zinc-500 mr-2 mt-0.5">•</span>
+                                <span>Redesigned the backend for Amazon Ads' Book-of-Business site, enabling asynchronous data ingestion from 10+ sources and AI-driven account prioritization. Improved P99 page load latency from 30s to &lt;1s, boosting user adoption by 35%</span>
                             </li>
                             <li class="flex items-start">
-                                <span class="text-zinc-500 mr-2 mt-0.5 text-sm">•</span>
-                                <span class="text-sm">Architected "Manager View" tool serving 4M accounts to sales teams with sub-second latency</span>
+                                <span class="text-zinc-500 mr-2 mt-0.5">•</span>
+                                <span>Created AI tool using LLMs to generate visualizations of advertiser metrics through prompts, saving 1,000 hours/month for sales teams using Bedrock, LangChain, LangGraph, Anthropic Claude, and Prompt Engineering</span>
                             </li>
                             <li class="flex items-start">
-                                <span class="text-zinc-500 mr-2 mt-0.5 text-sm">•</span>
-                                <span class="text-sm">Led GenAI initiative, boosting developer productivity by 20% using Amazon Q assistants and MCP servers</span>
+                                <span class="text-zinc-500 mr-2 mt-0.5">•</span>
+                                <span>Designed and implemented Amazon Ads' "Manager View" web tool, enabling sales managers to track team performance. Information of ~4M accounts is precomputed, mapped to sales agents and presented to users with just 0.3s P99 latency</span>
                             </li>
                             <li class="flex items-start">
-                                <span class="text-sm">Scrum Master and mentor to 5+ engineers; managed a team of 2 engineers</span>
+                                <span class="text-zinc-500 mr-2 mt-0.5">•</span>
+                                <span>Led GenAI initiative, boosting developer productivity by 20% using Amazon Q assistants and MCP servers. Acted as Scrum Master since 2022, mentoring 5+ engineers and managing a team of 2</span>
                             </li>
                         </ul>
+                    </div>
 
-                        <div class="flex flex-wrap gap-1.5 mt-3">
-                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">AWS</span>
-                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">React</span>
-                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Bedrock</span>
-                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">LangChain</span>
-                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Anthropic Claude</span>
-                        </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">ElasticSearch</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">AWS ECS</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">S3</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">DynamoDB</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">GenAI</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Amazon Bedrock</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">LangChain</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Amazon Q</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Lambda</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Glue ETL</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">SNS</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">SQS</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">AWS Step Functions</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Java</span>
                     </div>
                 </div>
 
                 <!-- Previous Amazon Role -->
-                <div class="relative">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
-                        <div>
-                            <h2 class="text-base sm:text-lg font-bold text-zinc-100">Software Development Engineer II</h2>
-                            <p class="text-sm sm:text-base text-zinc-300">Amazon.com - Last Mile</p>
-                        </div>
-                        <div class="text-zinc-400 mt-1 md:mt-0">
-                            <p class="font-medium text-sm">Oct 2021 - May 2022</p>
-                            <p class="text-xs">Seattle, WA</p>
-                        </div>
+                <div class="relative p-8 bg-gray-200 rounded-xl border border-gray-400 shadow-sm">
+                    <div class="absolute top-10 right-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                        <a href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="/src/assets/Amazon_logo.svg" alt="Amazon" class="h-8 w-auto" />
+                        </a>
+                    </div>
+                    <div class="pr-16">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Software Development Engineer II</h3>
+                        <p class="text-gray-600 text-sm mb-2">Amazon.com - Last Mile</p>
+                        <p class="text-gray-600 text-sm mb-4">Oct 2021 - May 2022 • Seattle, WA</p>
                     </div>
 
-                    <div class="space-y-4 text-zinc-300">
-                        <p class="text-sm sm:text-base leading-relaxed">
-                            Designed event-driven services enabling tote bags in drivers' routes. Led 3 engineers through implementation; delivered $11.7M savings and 30% reduction in stop time.
-                        </p>
+                    <hr class="border-gray-300 mb-4">
 
-                        <div class="flex flex-wrap gap-1.5 mt-3">
-                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">AWS</span>
-                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Android</span>
-                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Event-Driven Systems</span>
-                        </div>
+                    <div class="mb-4">
+                        <h4 class="text-sm font-bold text-black mb-2">Overview:</h4>
+                        <p class="text-gray-700 text-sm leading-relaxed">Promoted to SDE2 in the Ship With Amazon team, leading event-driven architecture initiatives and operational efficiency improvements.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="text-sm font-bold text-black mb-2">Key Achievements:</h4>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start">
+                                <span class="text-zinc-500 mr-2 mt-0.5">•</span>
+                                <span>Designed event-driven services to enable use of containers in Amazon Shipping. Led 3 engineers through implementation and launch, resulting in $11.7M savings and 30% decrease in driver stop time</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">AWS ECS</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">DynamoDB</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">SNS/SQS</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">CDK</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Android</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Java</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Kotlin</span>
                     </div>
                 </div>
 
                 <!-- SDE I Role -->
-                <div class="relative">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                        <div>
-                            <h2 class="text-2xl font-bold text-zinc-100">Software Development Engineer I</h2>
-                            <p class="text-lg text-zinc-300">Amazon.com - Last Mile</p>
-                        </div>
-                        <div class="text-zinc-400 mt-2 md:mt-0">
-                            <p class="font-medium">Oct 2019 - Oct 2021</p>
-                            <p class="text-sm">Seattle, WA</p>
-                        </div>
+                <div class="relative p-8 bg-gray-200 rounded-xl border border-gray-400 shadow-sm">
+                    <div class="absolute top-10 right-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                        <a href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="/src/assets/Amazon_logo.svg" alt="Amazon" class="h-8 w-auto" />
+                        </a>
+                    </div>
+                    <div class="pr-16">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Software Development Engineer I</h3>
+                        <p class="text-gray-600 text-sm mb-2">Amazon.com - Last Mile</p>
+                        <p class="text-gray-600 text-sm mb-4">Oct 2019 - Oct 2021 • Seattle, WA</p>
                     </div>
 
-                    <div class="space-y-4 text-zinc-300">
-                        <p class="text-sm sm:text-base leading-relaxed">
-                            Owned key features for Amazon Flex Android app supporting 18M daily interactions and 800K daily package scans.
-                        </p>
+                    <hr class="border-gray-300 mb-4">
 
-                        <ul class="space-y-1 ml-4">
+                    <div class="mb-4">
+                        <h4 class="text-sm font-bold text-black mb-2">Overview:</h4>
+                        <p class="text-gray-700 text-sm leading-relaxed">Owned critical features for Amazon's shipping platform and Flex mobile application, supporting millions of daily customer interactions.</p>
+                    </div>
+
+
+                    <div class="mb-4">
+                        <h4 class="text-sm font-bold text-black mb-2">Key Achievement:</h4>
+                        <ul class="space-y-2 text-sm text-gray-700">
                             <li class="flex items-start">
-                                <span class="text-zinc-500 mr-2 mt-0.5 text-sm">•</span>
+                                <span class="text-zinc-500 mr-2 mt-0.5">•</span>
+                                <span>Designed, implemented and launched key customer-facing features for the Amazon Flex Android app (navigation, itinerary and package scanning), supporting over 18M daily interactions and the collection of 800,000 packages daily</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-zinc-500 mr-2 mt-0.5">•</span>
                                 <span>Proposed & developed backend system to optimize stop-level package collection, increasing itinerary efficiency by 5%</span>
                             </li>
                         </ul>
+                    </div>
 
-                        <div class="flex flex-wrap gap-1.5 mt-3">
-                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Android</span>
-                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">AWS</span>
-                        </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">AWS ECS</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">DynamoDB</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">SNS/SQS</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">CDK</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Android</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Java</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Kotlin</span>
                     </div>
                 </div>
 
                 <!-- Internship -->
-                <div class="relative">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                        <div>
-                            <h2 class="text-2xl font-bold text-zinc-100">Software Engineer - Intern</h2>
-                            <p class="text-lg text-zinc-300">Comau (Fiat Chrysler Automobiles)</p>
-                        </div>
-                        <div class="text-zinc-400 mt-2 md:mt-0">
-                            <p class="font-medium">Mar 2017 - May 2017</p>
-                            <p class="text-sm">Grugliasco, Italy</p>
-                        </div>
+                <div class="relative p-8 bg-gray-200 rounded-xl border border-gray-400 shadow-sm">
+                    <div class="absolute top-10 right-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                        <a href="https://www.comau.com/en/" target="_blank" rel="noopener noreferrer">
+                            <img src="/src/assets/Comau_logo.svg" alt="Comau" class="h-12 w-auto" />
+                        </a>
+                    </div>
+                    <div class="pr-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Software Engineer - Intern</h3>
+                        <p class="text-gray-600 text-sm mb-2">Comau (Fiat Chrysler Automobiles)</p>
+                        <p class="text-gray-600 text-sm mb-4">Mar 2017 - May 2017 • Grugliasco, Italy</p>
                     </div>
 
-                    <div class="space-y-4 text-zinc-300">
-                        <p class="text-sm sm:text-base leading-relaxed">
-                            Engineered predictive maintenance platform, processing robotic arm data from FCA assembly lines; tested on-site at Maserati's plant.
-                        </p>
+                    <hr class="border-gray-300 mb-4">
 
-                        <div class="flex flex-wrap gap-1.5 mt-3">
-                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Android</span>
-                            <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Spring</span>
-                        </div>
+                    <div class="mb-4">
+                        <h4 class="text-sm font-bold text-black mb-2">Overview:</h4>
+                        <p class="text-gray-700 text-sm leading-relaxed">Three-month internship developing predictive maintenance solutions for industrial robotics at Comau's Innovation Team.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="text-sm font-bold text-black mb-2">Key Achievements:</h4>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start">
+                                <span class="text-zinc-500 mr-2 mt-0.5">•</span>
+                                <span>Developed Android Dashboard and backend for predictive maintenance, analyzing live statistics and errors from robotic arms in FCA assembly lines (including Maserati factory)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Android</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Spring</span>
                     </div>
                 </div>
+
+                <!-- Graduate Researcher -->
+                <div class="relative p-8 bg-gray-200 rounded-xl border border-gray-400 shadow-sm">
+                    <div class="absolute top-10 right-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                        <a href="https://www.uic.edu/" target="_blank" rel="noopener noreferrer">
+                            <img src="/src/assets/uic logo.svg" alt="UIC" class="h-10 w-auto" />
+                        </a>
+                    </div>
+                    <div class="pr-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Graduate Researcher</h3>
+                        <p class="text-gray-600 text-sm mb-2">University of Illinois at Chicago</p>
+                        <p class="text-gray-600 text-sm mb-4">Jan 2019 - Oct 2019 • Chicago, IL</p>
+                    </div>
+
+                    <hr class="border-gray-300 mb-4">
+
+                    <div class="mb-4">
+                        <h4 class="text-sm font-bold text-black mb-2">Overview:</h4>
+                        <p class="text-gray-700 text-sm leading-relaxed">Developed a machine learning-based testing framework for Android applications that adapts test execution based on app characteristics and UI classification.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="text-sm font-bold text-black mb-2">Key Achievements:</h4>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start">
+                                <span class="text-zinc-500 mr-2 mt-0.5">•</span>
+                                <span>Built adaptive testing system using ML algorithms to classify Android apps and activities for optimized test case generation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-zinc-500 mr-2 mt-0.5">•</span>
+                                <span>Created modular framework with UI model building, automated classification, and reusable test script execution</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-zinc-500 mr-2 mt-0.5">•</span>
+                                <span>Published thesis available at: <a href="https://indigo.uic.edu/articles/thesis/Machine_Learning_Methods_for_Adaptive_Test_Case_Generation_for_Android_Activities/12480908/1?file=23143706" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">UIC Indigo</a></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Machine Learning</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Android</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Automated Testing</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">UI Testing</span>
+                    </div>
+                </div>
+
+                <!-- Founder & Android Engineer -->
+                <div class="relative p-8 bg-gray-200 rounded-xl border border-gray-400 shadow-sm">
+                    <div class="absolute top-10 right-8 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                        <a href="https://www.linkedin.com/company/18780853/admin/dashboard/" target="_blank" rel="noopener noreferrer">
+                            <img src="/src/assets/blindspot_interactive_logo.jpeg" alt="BlindSpot Interactive" class="h-12 w-auto" />
+                        </a>
+                    </div>
+                    <div class="pr-20">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Founder & Android Engineer</h3>
+                        <p class="text-gray-600 text-sm mb-2">BlindSpot Interactive</p>
+                        <p class="text-gray-600 text-sm mb-4">Sep 2016 - Jan 2019 • Turin, Italy</p>
+                    </div>
+
+                    <hr class="border-gray-300 mb-4">
+
+                    <div class="mb-4">
+                        <h4 class="text-sm font-bold text-black mb-2">Overview:</h4>
+                        <p class="text-gray-700 text-sm leading-relaxed">Founded and led Android application development for BlindSpot Interactive, creating successful mobile apps published on the Google Play Store.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="text-sm font-bold text-black mb-2">Key Achievements:</h4>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li class="flex items-start">
+                                <span class="text-zinc-500 mr-2 mt-0.5">•</span>
+                                <span>Developed and published multiple Android applications achieving 25,000+ total downloads and 2,000 monthly active installs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-zinc-500 mr-2 mt-0.5">•</span>
+                                <span>Generated revenue through AdSense monetization and user engagement strategies</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-zinc-500 mr-2 mt-0.5">•</span>
+                                <span>Check out the <a href="/projects" class="text-blue-600 hover:text-blue-800 underline font-medium">Projects section</a> for details on the apps developed during this period</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Android</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Mobile Development</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Google Play Store</span>
+                        <span class="px-3 py-1 bg-zinc-800 text-zinc-300 text-sm rounded-full">Entrepreneurship</span>
+                    </div>
+                </div>
+
             </div>
 
             <div class="mt-16 pt-8 border-t border-zinc-800">
