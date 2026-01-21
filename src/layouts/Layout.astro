@@ -13,19 +13,23 @@ const defaultDescription = "Personal website of Arturo Cardone";
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title ?? defaultTitle}</title>
 		<meta name="description" content={description ?? defaultDescription} />
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Arturo Cardone" />
+		<link rel="canonical" href={`https://arturocardone.com${Astro.url.pathname}`} />
 
-		<meta property="og:url" content="https://arturocardone.github.io/" />
+		<meta property="og:url" content="https://arturocardone.com/" />
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content={defaultTitle} />
 		<meta property="og:description" content={defaultDescription} />
 
 		<!-- Twitter Meta Tags -->
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta property="twitter:domain" content="arturocardone.github.io" />
-		<meta property="twitter:url" content="https://arturocardone.github.io/" />
+		<meta property="twitter:domain" content="arturocardone.com" />
+		<meta property="twitter:url" content="https://arturocardone.com/" />
 		<meta name="twitter:title" content={defaultTitle} />
 		<meta name="twitter:description" content={defaultDescription} />
 
