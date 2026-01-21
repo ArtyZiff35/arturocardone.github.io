@@ -15,7 +15,7 @@ export default function Navigation() {
 
   return (
     <>
-      <nav className="sticky top-0 z-40 bg-zinc-900/60 backdrop-blur-md border-b border-zinc-800/50">
+      <nav className="sticky top-0 z-40 bg-zinc-900/30 backdrop-blur-md border-b border-zinc-800/50">
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center justify-center gap-6 lg:gap-8 py-4 px-6">
           {navItems.map((item) => (
