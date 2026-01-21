@@ -2,6 +2,8 @@
 import InfoLayout from '../layouts/InfoLayout.astro';
 import Navigation from '../components/Navigation.tsx';
 import profilePic from '../assets/Arturo-Profile-Pic.jpg';
+import uicLogo from '../assets/University_of_Illinois_at_Chicago_circle_logo.svg';
+import politecnicoLogo from '../assets/Politecnico_di_Torino_-_Logo.svg';
 ---
 
 <InfoLayout>
@@ -15,7 +17,7 @@ import profilePic from '../assets/Arturo-Profile-Pic.jpg';
             <div class="space-y-8">
                 <div class="prose prose-invert max-w-none">
                     <p class="text-sm sm:text-base md:text-lg lg:text-xl text-zinc-300 leading-relaxed mb-3 sm:mb-4 md:mb-6">
-                        Software Engineer with 5+ years of experience in distributed systems, AWS infrastructure, and Android. Passionate about building scalable, high-impact systems using cutting-edge technologies. Currently building Generative AI solutions to drive efficiency and innovation in complex systems.
+                        I am a Software Engineer based in Chicago, IL with experience in distributed systems, AWS infrastructure, GenAI and Android. I'm passionate about building scalable, high-impact systems using cutting-edge technologies. I am currently working at Amazon.com to drive efficiency in the Advertising organization.
                     </p>
                 </div>
 
@@ -34,28 +36,58 @@ import profilePic from '../assets/Arturo-Profile-Pic.jpg';
                     </div>
                 </div>
 
+                <!-- Education and My Approach Side by Side -->
                 <div class="grid md:grid-cols-2 gap-6 sm:gap-8 text-center md:text-left px-4 sm:px-0">
+                    <!-- Education Section -->
                     <div class="space-y-4">
-                        <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-zinc-200">What I Do</h2>
+                        <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-zinc-200">Education</h2>
 
-                        <div class="space-y-3">
-                            <div class="p-3 sm:p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
-                                <h3 class="text-base sm:text-lg font-medium text-zinc-200 mb-2">System Architecture</h3>
-                                <p class="text-zinc-400 text-sm">Design and implement scalable distributed systems using AWS services and microservices architecture.</p>
+                        <div class="space-y-4">
+                            <!-- UIC Masters -->
+                            <div class="flex items-start gap-4 p-4 bg-gray-200 rounded-lg border border-gray-400">
+                                <div class="flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                                    <a href="https://www.uic.edu/" target="_blank" rel="noopener noreferrer">
+                                        <img src={uicLogo.src} alt="University of Illinois at Chicago" class="h-10 w-auto" />
+                                    </a>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-base font-semibold text-gray-900 mb-1">Master of Science - MS, Computer Science</h3>
+                                    <p class="text-gray-600 text-xs mb-1">University of Illinois at Chicago</p>
+                                    <p class="text-gray-600 text-xs">Jan 2018 – Dec 2019 • GPA: 4.0</p>
+                                </div>
                             </div>
 
-                            <div class="p-3 sm:p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
-                                <h3 class="text-base sm:text-lg font-medium text-zinc-200 mb-2">AI/ML Solutions</h3>
-                                <p class="text-zinc-400 text-sm">Build generative AI applications using Amazon Bedrock, LangChain, and modern LLM frameworks.</p>
+                            <!-- Polytechnic Turin Masters -->
+                            <div class="flex items-start gap-4 p-4 bg-gray-200 rounded-lg border border-gray-400">
+                                <div class="flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                                    <a href="https://www.polito.it/en" target="_blank" rel="noopener noreferrer">
+                                        <img src={politecnicoLogo.src} alt="Polytechnic University of Turin" class="h-10 w-auto" />
+                                    </a>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-base font-semibold text-gray-900 mb-1">Master of Science - MS, Computer Engineering</h3>
+                                    <p class="text-gray-600 text-xs mb-1">Polytechnic University of Turin, Italy</p>
+                                    <p class="text-gray-600 text-xs">Sep 2017 – Dec 2019 • GPA: 4.0</p>
+                                </div>
                             </div>
 
-                            <div class="p-3 sm:p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
-                                <h3 class="text-base sm:text-lg font-medium text-zinc-200 mb-2">Mobile Development</h3>
-                                <p class="text-zinc-400 text-sm">Create high-performance Android applications supporting millions of daily interactions.</p>
+                            <!-- Politecnico di Torino Bachelors -->
+                            <div class="flex items-start gap-4 p-4 bg-gray-200 rounded-lg border border-gray-400">
+                                <div class="flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity duration-300">
+                                    <a href="https://www.polito.it/en" target="_blank" rel="noopener noreferrer">
+                                        <img src={politecnicoLogo.src} alt="Politecnico di Torino" class="h-10 w-auto" />
+                                    </a>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-base font-semibold text-gray-900 mb-1">Bachelor's degree, Computer Engineering</h3>
+                                    <p class="text-gray-600 text-xs mb-1">Polytechnic University of Turin, Italy</p>
+                                    <p class="text-gray-600 text-xs">Sep 2014 – Sep 2017 • GPA: 3.8</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- My Approach -->
                     <div class="space-y-4">
                         <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-zinc-200">My Approach</h2>
 
@@ -72,30 +104,75 @@ import profilePic from '../assets/Arturo-Profile-Pic.jpg';
                                 When I'm not coding, you'll find me exploring new technologies, contributing to open source projects, or mentoring junior developers.
                             </p>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="pt-2">
-                            <h3 class="text-xs sm:text-sm font-medium text-zinc-200 mb-1">Quick Facts</h3>
-                            <ul class="space-y-1 text-zinc-400 text-xs sm:text-sm">
-                                <li>• Based in Chicago, IL</li>
-                                <li>• 5+ years at Amazon</li>
-                                <li>• MS Computer Science from UIC</li>
-                                <li>• Passionate about AI and distributed systems</li>
+                <!-- What I Do and Quick Facts Side by Side -->
+                <div class="grid md:grid-cols-2 gap-6 sm:gap-8 text-center md:text-left px-4 sm:px-0">
+                    <!-- What I Do -->
+                    <div class="space-y-4">
+                        <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-zinc-200">What I Do</h2>
+
+                        <div class="space-y-3">
+                            <div class="p-3 sm:p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                                <h3 class="text-base sm:text-lg font-medium text-zinc-200 mb-2">AWS & Distributed Systems</h3>
+                                <p class="text-zinc-400 text-sm">Design and implement scalable distributed systems using AWS services and microservices architecture.</p>
+                            </div>
+
+                            <div class="p-3 sm:p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                                <h3 class="text-base sm:text-lg font-medium text-zinc-200 mb-2">Generative AI</h3>
+                                <p class="text-zinc-400 text-sm">Build generative AI applications using Amazon Bedrock, LangChain, and modern LLM frameworks.</p>
+                            </div>
+
+                            <div class="p-3 sm:p-4 bg-zinc-900/50 rounded-lg border border-zinc-800">
+                                <h3 class="text-base sm:text-lg font-medium text-zinc-200 mb-2">Android Development</h3>
+                                <p class="text-zinc-400 text-sm">Create high-performance Android applications supporting millions of daily interactions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Facts -->
+                    <div class="space-y-4">
+                        <h2 class="text-lg sm:text-xl md:text-2xl font-semibold text-zinc-200">Quick Facts</h2>
+
+                        <div class="space-y-3">
+                            <ul class="space-y-3 text-zinc-300 text-sm">
+                                <li class="flex items-start">
+                                    <span class="text-zinc-500 mr-2 mt-0.5">•</span>
+                                    <span>Based in Chicago, IL</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-zinc-500 mr-2 mt-0.5">•</span>
+                                    <span>Spent 3 years in Seattle, WA working at Amazon HQ</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-zinc-500 mr-2 mt-0.5">•</span>
+                                    <span>Double Master's degrees from UIC and Politecnico di Torino</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-zinc-500 mr-2 mt-0.5">•</span>
+                                    <span>Spent years developing Android apps as a personal passion</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-zinc-500 mr-2 mt-0.5">•</span>
+                                    <span>Now enjoying building Generative AI solutions</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="pt-6">
+                <div class="mt-16 pt-8 border-t border-zinc-800">
                     <div class="text-center">
-                        <h2 class="text-sm sm:text-base font-semibold text-zinc-200 mb-2">Let's Work Together</h2>
-                        <p class="text-zinc-400 mb-3 text-xs sm:text-sm">
-                            I'm always interested in new opportunities and challenging projects. Whether you're looking to build something amazing or need expertise in AWS, AI, or Android development, I'd love to hear from you.
+                        <h2 class="text-2xl font-semibold text-zinc-200 mb-4">Ready to Build Something Amazing?</h2>
+                        <p class="text-zinc-400 mb-6">
+                            I'm always excited to take on new challenges and contribute to innovative projects.
                         </p>
                         <a
                             href="/contact"
-                            class="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-zinc-700 hover:bg-zinc-600 text-zinc-100 rounded-lg transition-colors duration-200 font-medium text-sm sm:text-base"
+                            class="inline-block px-8 py-3 bg-zinc-700 hover:bg-zinc-600 text-zinc-100 rounded-lg transition-colors duration-200 font-medium"
                         >
-                            Get In Touch
+                            Let's Connect
                         </a>
                     </div>
                 </div>
