@@ -4,7 +4,39 @@ import "../styles/global.css";
 const { title, description } = Astro.props;
 
 const defaultTitle = "Arturo Cardone";
-const defaultDescription = "Personal website of Arturo Cardone";
+const defaultDescription = "Senior Software Engineer specializing in AI/ML, distributed systems, and full-stack development. Currently at Amazon, with experience in computer vision, NLP, and scalable cloud architectures.";
+
+const pageTitle = title ?? defaultTitle;
+const pageDescription = description ?? defaultDescription;
+const canonicalUrl = `https://arturocardone.com${Astro.url.pathname === '/' ? '' : Astro.url.pathname}`;
+
+// JSON-LD Structured Data for Person
+const personSchema = {
+	"@context": "https://schema.org",
+	"@type": "Person",
+	"name": "Arturo Cardone",
+	"url": "https://arturocardone.com",
+	"jobTitle": "Senior Software Engineer",
+	"worksFor": {
+		"@type": "Organization",
+		"name": "Amazon"
+	},
+	"alumniOf": [
+		{
+			"@type": "CollegeOrUniversity",
+			"name": "University of Illinois at Chicago"
+		},
+		{
+			"@type": "CollegeOrUniversity",
+			"name": "Politecnico di Torino"
+		}
+	],
+	"knowsAbout": ["Software Engineering", "Machine Learning", "Artificial Intelligence", "Distributed Systems", "Computer Vision", "Natural Language Processing"],
+	"sameAs": [
+		"https://www.linkedin.com/in/arturo-cardone/",
+		"https://github.com/ArtyZiff35"
+	]
+};
 ---
 
 <!doctype html>
@@ -15,23 +47,32 @@ const defaultDescription = "Personal website of Arturo Cardone";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title ?? defaultTitle}</title>
-		<meta name="description" content={description ?? defaultDescription} />
+		<title>{pageTitle}</title>
+		<meta name="description" content={pageDescription} />
 		<meta name="robots" content="index, follow" />
 		<meta name="author" content="Arturo Cardone" />
-		<link rel="canonical" href={`https://arturocardone.com${Astro.url.pathname}`} />
+		<link rel="canonical" href={canonicalUrl} />
+		
+		<!-- Keywords for search engines -->
+		<meta name="keywords" content="Arturo Cardone, Software Engineer, AI, Machine Learning, Amazon, Full Stack Developer, Chicago" />
 
-		<meta property="og:url" content="https://arturocardone.com/" />
+		<!-- Open Graph Meta Tags -->
+		<meta property="og:url" content={canonicalUrl} />
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content={defaultTitle} />
-		<meta property="og:description" content={defaultDescription} />
+		<meta property="og:title" content={pageTitle} />
+		<meta property="og:description" content={pageDescription} />
+		<meta property="og:site_name" content="Arturo Cardone" />
+		<meta property="og:locale" content="en_US" />
 
 		<!-- Twitter Meta Tags -->
-		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:card" content="summary" />
 		<meta property="twitter:domain" content="arturocardone.com" />
-		<meta property="twitter:url" content="https://arturocardone.com/" />
-		<meta name="twitter:title" content={defaultTitle} />
-		<meta name="twitter:description" content={defaultDescription} />
+		<meta property="twitter:url" content={canonicalUrl} />
+		<meta name="twitter:title" content={pageTitle} />
+		<meta name="twitter:description" content={pageDescription} />
+
+		<!-- JSON-LD Structured Data -->
+		<script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
 
 	</head>
 	<body class="font-sans min-h-screen bg-zinc-900">

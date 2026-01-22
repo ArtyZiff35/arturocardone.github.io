@@ -1,4 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-	<circle cx="50" cy="50" r="40" fill="#667eea"/>
-	<text x="50" y="65" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="white" text-anchor="middle">AC</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <style>
+        .bg { fill: #18181b; }
+        .text { fill: #fafafa; }
+        @media (prefers-color-scheme: light) {
+            .bg { fill: #fafafa; }
+            .text { fill: #18181b; }
+        }
+    </style>
+    <rect class="bg" width="32" height="32" rx="6"/>
+    <text class="text" x="16" y="23" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" text-anchor="middle" letter-spacing="-1">AC</text>
 </svg>
