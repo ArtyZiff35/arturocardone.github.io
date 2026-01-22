@@ -9,7 +9,8 @@ const pathname = Astro.url.pathname;
 
 <Layout title={title} description={description}>
 	<div class="flex relative gap-2 md:gap-4 w-full max-w-screen-xl mx-auto px-2 sm:px-4">
-		<nav class="relative w-8 md:w-40 lg:w-56 xl:w-72 sm:min-h-screen sm:ml-2 md:ml-4 sm:pb-4">
+		<!-- Desktop sidebar -->
+		<nav class="relative hidden md:block w-8 md:w-40 lg:w-56 xl:w-72 sm:min-h-screen sm:ml-2 md:ml-4 sm:pb-4">
 			<div class="w-full h-screen max-sm:h-[90vh] max-sm:w-8 md:max-w-40 lg:max-w-56 xl:max-w-72 fixed -z-10 max-sm:top-0 sm:bottom-4 rounded-b-full overflow-hidden">
 				<WarpBackground
 					color1="#ffffff"

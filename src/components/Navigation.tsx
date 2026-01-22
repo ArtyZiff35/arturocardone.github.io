@@ -34,13 +34,13 @@ export default function Navigation() {
         <div className="md:hidden relative">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="flex items-center justify-center w-10 h-10 p-2 text-zinc-300 hover:text-zinc-100 transition-colors duration-200"
+            className="flex items-center justify-center w-12 h-12 p-3 text-zinc-300 hover:text-zinc-100 transition-colors duration-200"
             aria-label="Toggle menu"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="28"
+              height="28"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"

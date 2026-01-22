@@ -36,7 +36,7 @@ const ExpandableAcademicProjects = ({ projects }: ExpandableAcademicProjectsProp
                 {visibleProjects.map((project, index) => (
                     <div key={index} className="p-4 bg-gray-200 rounded-lg border border-gray-400">
                         <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                            <h3 className="text-xl font-medium text-gray-900 flex items-center gap-2">
+                            <h3 className="text-2xl font-bold text-gray-900 flex items-center gap-2">
                                 {project.title.includes('👑') ? (
                                     <>
                                         {project.title.replace(' 👑', '')}
@@ -48,7 +48,7 @@ const ExpandableAcademicProjects = ({ projects }: ExpandableAcademicProjectsProp
                             </h3>
                             <span className="text-gray-600 text-sm mt-2 md:mt-0">{project.date}</span>
                         </div>
-                        <p className="text-gray-700 mb-3">{project.description}</p>
+                        <p className="text-gray-700 text-sm leading-relaxed mb-3">{project.description}</p>
                         {project.links && project.links.length > 0 && (
                             <div className="flex gap-4 text-sm mb-3">
                                 {project.links.map((link, linkIndex) => (
@@ -74,10 +74,10 @@ const ExpandableAcademicProjects = ({ projects }: ExpandableAcademicProjectsProp
                         <div className="opacity-30">
                             <div className="p-4 bg-gray-200 rounded-lg border border-gray-400">
                                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                                    <h3 className="text-xl font-medium text-gray-900">{projects[2].title}</h3>
+                                    <h3 className="text-2xl font-bold text-gray-900">{projects[2].title}</h3>
                                     <span className="text-gray-600 text-sm mt-2 md:mt-0">{projects[2].date}</span>
                                 </div>
-                                <p className="text-gray-700 mb-3 line-clamp-2">{projects[2].description}</p>
+                                <p className="text-gray-700 text-sm leading-relaxed mb-3 line-clamp-2">{projects[2].description}</p>
                                 {projects[2].links && projects[2].links.length > 0 && (
                                     <div className="flex gap-4 text-sm mb-3 opacity-50 pointer-events-none">
                                         {projects[2].links.map((link, linkIndex) => (
